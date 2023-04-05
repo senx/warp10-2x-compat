@@ -1,0 +1,4 @@
+<%
+  'mapper.mean.exclude-nulls' @2x-compat/log
+  mapper.mean
+%>

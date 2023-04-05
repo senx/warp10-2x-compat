@@ -1,0 +1,4 @@
+<%
+  'MAXURLFETCHSIZE' @2x-compat/log
+  DROP
+%>

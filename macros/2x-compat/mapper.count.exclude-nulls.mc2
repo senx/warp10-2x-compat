@@ -1,0 +1,4 @@
+<%
+  'mapper.count.exclude-nulls' @2c-compat/log
+  mapper.count
+%>

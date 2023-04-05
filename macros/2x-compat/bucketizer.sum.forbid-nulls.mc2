@@ -1,0 +1,4 @@
+<%
+  'bucketizer.sum.forbid-nulls' @2x-compat/log
+  bucketizer.sum
+%>

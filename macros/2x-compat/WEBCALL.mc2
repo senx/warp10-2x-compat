@@ -1,0 +1,17 @@
+<%
+  'WEBCALL' @2x-compat/log
+  [ 'token' 'method' 'url' 'headers' 'data' ] STORE
+  ## Apply the capabilities
+  $token CAPDD
+  ## Generate UUID
+  UUID 'uuid' STORE
+  {
+    'url' $url
+    'method' $method
+    'headers' $headers $uuid 'X-Warp10-WebCall' PUT
+    'body' $body
+  }
+  HTTP
+  DROP
+  $uuid
+%>

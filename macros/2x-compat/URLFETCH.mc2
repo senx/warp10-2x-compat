@@ -1,0 +1,26 @@
+<%
+  'URLFETCH' @2x-compat/log
+  DUP TYPEOF 'MAP' == <% 'headers' STORE %> IFT
+  DUP TYPEOF 'STRING' == <% 1 ->LIST %> IFT
+  'urls' STORE
+  {} 'headers' CSTORE
+
+  $urls
+  
+  <%
+    'url' STORE
+    {
+      'url' $url
+      'headers' $headers
+      'method' 'GET'
+      'body' NULL
+    }
+    HTTP
+    [ SWAP
+      DUP 'status.code' GET
+      SWAP DUP 'status.message' GET
+      SWAP DUP 'headers' GET
+      SWAP 'content' GET ->B64
+    ]
+  %> F LMAP
+%>

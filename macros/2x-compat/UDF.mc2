@@ -1,0 +1,4 @@
+<%
+  'UDF' @2x-compat/log
+  'UDF support has been removed in 3.x' MSGFAIL
+%>

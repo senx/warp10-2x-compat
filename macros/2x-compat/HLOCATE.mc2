@@ -1,0 +1,4 @@
+<%
+  'HLOCATE' @2x-compat/log
+  'HBase support has been removed in 3.0' MSGFAIL
+%>

@@ -1,0 +1,4 @@
+<%
+  'mapper.join.forbid-nulls' @2x-compat/log
+  mapper.join
+%>

@@ -1,0 +1,4 @@
+<%
+  'CUDF' @2x-compat/log
+  'CUDF support has been removed in 3.x' MSGFAIL
+%>

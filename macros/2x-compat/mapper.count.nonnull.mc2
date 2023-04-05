@@ -1,0 +1,4 @@
+<%
+  'mapper.count.nonnull' @2x-compat/log
+  mapper.count
+%>

@@ -1,0 +1,4 @@
+<%
+  'bucketizer.max.forbid-nulls' @2x-compat/log
+  bucketizer.max
+%>

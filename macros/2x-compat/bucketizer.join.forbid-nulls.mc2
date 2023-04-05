@@ -1,0 +1,4 @@
+<%
+  'bucketizer.join.forbid-nulls' @2x-compat/log
+  bucketizer.join
+%>
