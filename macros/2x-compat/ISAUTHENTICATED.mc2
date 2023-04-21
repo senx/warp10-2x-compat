@@ -1,4 +1,4 @@
 <%
   'ISAUTHENTICATED' @2x-compat/log
-  '.authenticated' CAPADD DUP ISNULL <% DROP false %> <% '2xCOMPAT' == %> IFTE
+  '.authenticated' CAPGET DUP ISNULL <% DROP false %> <% '2xCOMPAT' == %> IFTE
 %>
