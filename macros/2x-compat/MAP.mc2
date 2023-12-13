@@ -17,9 +17,9 @@
 <%
   DUP TYPEOF 'MAP' ==
   <%
-    'MAP' @2x-compat/log
     DUP 'occurences' GET ISNULL NOT
     <%
+      'MAP' @2x-compat/log
       # Copy the map
       1 SNAPSHOTN EVAL
       'occurences' REMOVE 'occurrences' PUT
