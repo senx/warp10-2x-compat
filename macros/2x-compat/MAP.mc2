@@ -15,7 +15,17 @@
 #
 
 <%
-  'DOC' @2x-compat/log
-  {} SWAP 'desc' PUT
-  INFO
+  DUP TYPEOF 'MAP' ==
+  <%
+    DUP 'occurences' GET ISNULL NOT
+    <%
+      'MAP' @2x-compat/log
+      # Copy the map
+      1 SNAPSHOTN EVAL
+      'occurences' REMOVE 'occurrences' PUT
+    %>
+    IFT
+  %>
+  IFT
+  .MAP
 %>
